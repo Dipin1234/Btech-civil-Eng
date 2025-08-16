@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="Favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    
+    <div class="container">
+        <header>
+            <div class="navcontainer">
+                <nav>
+                    <ul id="navList">
+                        <li>
+                            <p id="navpara">High Five</p>
+                        </li>
+                        <li>
+                            <div id="navitems">
+                                <a href='home.html'>Home</a>
+                                <a href="contact us.html">Contact Us</a>
+                                <a href='about.html'>About Us</a>
+                                
+                            </div>
+                            <div class="menu">
+                                <button id="menuButton">
+                                    <img src="Hamburger_icon.png" alt="" id="hamburger">
+                                </button>
+                                <div class="menu-content" id="menuContent">
+                                    <a href='home.html'>Home</a>
+                                    <a href="contact us.html">Contact Us</a>
+                                    <a href='about.html'>About Us</a>
+                                </div>
+                            </div>
+                            
+                        </li>
+                        
+                    </ul>
+                    
+                    
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            
+            <div class="heading">
+                <div class="heading_div">
+                    <p id="heading_para">B.Tech</p>
+                </div>
+            </div>
+            <div class="contentbox">
+                
+                <div class="item">
+                    <a href='sm1_b.tech.html'>Semester 1</a>
+                </div>
+                <div class="item">
+                    <a href='sm2_b.tech.html'>Semester 2</a>
+                </div>
+                <div class="item">
+                    <a href='sm3_b.tech.html'>Semester 3</a>
+                </div>
+                <div class="item">
+                    <a href='sm4_b.tech.html'>Semester 4</a>
+                </div>
+                <div class="item">
+                    <a href='coming.html'>Semester 5</a>
+                </div>
+                <div class="item">
+                    <a href='coming.html'>Semester 6</a>
+                </div>
+                <div class="item">
+                    <a href='coming.html'>Semester 7</a>
+                </div>
+                <div class="item">
+                    <a href='coming.html'>Semester 8</a>
+                </div>
+                
+                
+                
+            </div>
+        </main>
+        
+        
+    </div>
+    
+    <script>
+        const menuButton = document.getElementById('menuButton');
+        const menuContent = document.getElementById('menuContent');
+        
+        menuButton.addEventListener('click', () => {
+            menuContent.style.display = menuContent.style.display === 'block' ? 'none' : 'block';
+        });
+        
+        window.addEventListener('click', (event) => {
+            if (!menuButton.contains(event.target) && !menuContent.contains(event.target)) {
+                menuContent.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>

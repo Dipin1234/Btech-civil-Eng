@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEM-202</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="Favicon.png" type="image/x-icon">
+</head>
+<body>
+   
+    <div class="container">
+        <header>
+            <div class="navcontainer">
+                <nav>
+                    <ul id="navList">
+                        <li>
+                            <p id="navpara">FAB Five</p>
+                        </li>
+                        <li>
+                            <div id="navitems">
+                                <a href='home.html'>Home</a>
+                                <a href="contact us.html">Contact Us</a>
+                                <a href='about.html'>About Us</a>
+                               
+                            </div>
+                            <div class="menu">
+                                <button id="menuButton">
+                                    <img src="Hamburger_icon.png" alt="" id="hamburger">
+                                </button>
+                                <div class="menu-content" id="menuContent">
+                                    <a href='home.html'>Home</a>
+                                    <a href="contact us.html">Contact Us</a>
+                                    <a href='about.html'>About Us</a>
+                                </div>
+                            </div>
+                            
+                        </li>
+                    
+                    </ul>
+                    
+                    
+                </nav>
+            </div>
+        </header>
+
+        <main>
+
+            <div class="heading">
+                <div class="heading_div">
+                    <p id="heading_para">MEM-202</p>
+                </div>
+            </div>
+            <div class="material_contentBox">
+                <div class="material_items_1">
+                    <a href="https://drive.google.com/drive/folders/1IdfPssX_2ss0pwZVYkMezVWVaNAoFLa8">CT1</a>
+                </div>
+                <div class="material_items_1">
+                    <a href="https://drive.google.com/drive/folders/1IehF3pZT9D69zFvXE7h5xZayIwXwB3nU">CT2</a>
+                </div>
+                <div class="material_items_1">
+                    <a href="https://drive.google.com/drive/folders/1IjM3DJQxhdG3F7et4xwAfrlj02JkCps3">End Semester</a>
+                </div>
+                <div class="material_items_2">
+                    <p>Book</p>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/1C9rkrzCT9lKXOXyKdb11si_cwEXFn_VI/view?usp=drivesdk">Meriam</a></li>
+                        <li><a href="https://drive.google.com/file/d/1CBmtqmA-XAnefbh66k1CZHEDaRWm1ULv/view?usp=drivesdk">R.C. Hibbler</a></li>
+                        <li><a href="https://drive.google.com/file/d/1C0Cyis7ycmEBo-MNEEfpbn9_Bhv7wdzQ/view?usp=drivesdk">Shames</a></li>
+                    </ul>
+                </div>
+                <div class="material_items_2">
+                    <p>Question Bank</p>
+                    <ul>
+                        <li><a href="https://drive.google.com/drive/folders/1Ip1v9OneWRVO87uEUvR98-_Ry2TXihBf">Question Bank</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </main>
+
+
+    </div>
+
+    <script>
+        const menuButton = document.getElementById('menuButton');
+        const menuContent = document.getElementById('menuContent');
+    
+        menuButton.addEventListener('click', () => {
+            menuContent.style.display = menuContent.style.display === 'block' ? 'none' : 'block';
+        });
+    
+        window.addEventListener('click', (event) => {
+            if (!menuButton.contains(event.target) && !menuContent.contains(event.target)) {
+                menuContent.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester 2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="Favicon.png" type="image/x-icon">
+</head>
+<body>
+   
+    <div class="container">
+        <header>
+            <div class="navcontainer">
+                <nav>
+                    <ul id="navList">
+                        <li>
+                            <p id="navpara">FAB Five</p>
+                        </li>
+                        <li>
+                            <div id="navitems">
+                                <a href='home.html'>Home</a>
+                                <a href="contact us.html">Contact Us</a>
+                                <a href='about.html'>About Us</a>
+    
+                            </div>
+                            <div class="menu">
+                                <button id="menuButton">
+                                    <img src="Hamburger_icon.png" alt="" id="hamburger">
+                                </button>
+                                <div class="menu-content" id="menuContent">
+                                    <a href='home.html'>Home</a>
+                                    <a href="contact us.html">Contact Us</a>
+                                    <a href='about.html'>About Us</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="heading">
+                <div class="heading_div">
+                    <p id="heading_para">Semester 2</p>
+                </div>
+            </div>
+            <div class="contentbox">
+                
+                <div class="item">
+                    <a href='sm2_eem_201.html'>EEM-201</a>
+                </div>
+                <div class="item">
+                    <a href='sm2_eem_202.html'>EEM-202</a>
+                </div>
+                <div class="item">
+                    <a href='sm2_mam_281.html'>MAM-281</a>
+                </div>
+                <div class="item">
+                    <a href='sm2_mem_201.html'>MEM-201</a>
+                </div>
+                <div class="item">
+                    <a href='sm2_mem_202.html'>MEM-202</a>
+                </div>        
+                <div class="item">
+                    <a href='sm2_mem_203.html'>MEM-203</a>
+                </div>
+                <div class="item">
+                    <a href='sm2_mem_204.html'>MEM-204</a>
+                </div>
+                <div class="item">
+                    <a href='sm2_phm_281.html'>PHM-281</a>
+                </div>
+                <div class="item">
+                    <a href='sm2_phm_282.html'>PHM-282</a>
+                </div>
+                <div class="item">
+                    <a href='sm2_esc_281.html'>ESC-281</a>
+                </div>
+
+
+                
+
+            </div>
+        </main>
+
+        <script>
+            const menuButton = document.getElementById('menuButton');
+            const menuContent = document.getElementById('menuContent');
+        
+            menuButton.addEventListener('click', () => {
+                menuContent.style.display = menuContent.style.display === 'block' ? 'none' : 'block';
+            });
+        
+            window.addEventListener('click', (event) => {
+                if (!menuButton.contains(event.target) && !menuContent.contains(event.target)) {
+                    menuContent.style.display = 'none';
+                }
+            });
+        </script>
+
+    </div>
+</body>
+</html>

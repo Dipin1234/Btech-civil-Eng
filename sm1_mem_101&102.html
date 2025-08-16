@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEM-101&102</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="Favicon.png" type="image/x-icon">
+</head>
+<body>
+   
+    <div class="container">
+        <header>
+            <div class="navcontainer">
+                <nav>
+                    <ul id="navList">
+                        <li>
+                            <p id="navpara">FAB Five</p>
+                        </li>
+                        <li>
+                            <div id="navitems">
+                                <a href='home.html'>Home</a>
+                                <a href="contact us.html">Contact Us</a>
+                                <a href='about.html'>About Us</a>
+                               
+                            </div>
+                            <div class="menu">
+                                <button id="menuButton">
+                                    <img src="Hamburger_icon.png" alt="" id="hamburger">
+                                </button>
+                                <div class="menu-content" id="menuContent">
+                                    <a href='home.html'>Home</a>
+                                    <a href="contact us.html">Contact Us</a>
+                                    <a href='about.html'>About Us</a>
+                                </div>
+                            </div>
+                            
+                        </li>
+                    
+                    </ul>
+                    
+                    
+                </nav>
+            </div>
+        </header>
+
+        <main>
+
+            <div class="heading">
+                <div class="heading_div">
+                    <p id="heading_para">MEM-101&102</p>
+                </div>
+            </div>
+            <div class="material_contentBox">
+                <div class="material_items_1">
+                    <a href="https://drive.google.com/drive/folders/1Crupt9bWALW4cgwSUwAgs6ei-ecK2qJ8">CT1</a>
+                </div>
+                <div class="material_items_1">
+                    <a href="https://drive.google.com/drive/folders/1CvE2b84qp1Q4cdUS1kQj0nVPR-g8wgiq">CT2</a>
+                </div>
+                <div class="material_items_1">
+                    <a href="https://drive.google.com/drive/folders/1CvR4Wqxm54yM4IaU4xAceqZxWfrVmpNR">End Semester</a>
+                </div>
+                <div class="material_items_2">
+                    <p>Problem Sheet</p>
+                    <ul id="RDC">
+                        <li><a href="https://drive.google.com/file/d/13uTIdWWpMvkcQx5W9U9QgQBiM5PyMZUF/view?usp=drivesdk">Tittle Block</a></li>
+                        <li><a href="https://drive.google.com/file/d/13gWTkvF7unqf0MCLHaK8LUPHFHAucnXn/view?usp=drivesdk">Engineering Curves</a></li>
+                        <li><a href="https://drive.google.com/file/d/13viOkMO-PdbMFaXQRm0Bk674Ntl_sbpP/view?usp=drivesdk">Projection of Straight Lines</a></li>
+                        <li><a href="https://drive.google.com/file/d/13OMmv-mis5ks-NRvMX0w3iv5zw0SB4_R/view?usp=drivesdk">Projection of Solids</a></li>
+                        <li><a href="https://drive.google.com/file/d/13pzkVQcIcP30BVu5418-BR9vnDwMK6Rt/view?usp=drivesdk">Projection of Planes</a></li>
+                        <li><a href="https://drive.google.com/file/d/13v2lME7hrnThCjNdLEqpwc9gVoNd2RX3/view?usp=drivesdk">Sections of Solids</a></li>
+                        <li><a href="https://drive.google.com/file/d/13jpKjqEYcHzKBIT2y238qW9KNXcHTLW0/view?usp=drivesdk">Intersection of Solids</a></li>
+                        <li><a href="https://drive.google.com/file/d/13Ts9WXaioDe-9UuWMvO3KdaDWFot0jBy/view?usp=drivesdk">Development of Surfaces</a></li>
+                        <li><a href="https://drive.google.com/file/d/13knT4RaSDgBZ7Qq2zRYe_zot88sb8E7p/view?usp=drivesdk">Isometric Projections</a></li>
+                    </ul>
+                </div>
+                <div class="material_items_2">
+                    <p>Book</p>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/13JYrKE9xAYhfDbTxUaj5gFbMeoozFBc7/view?usp=drivesdk">N.D. Bhatt</a></li>
+                        <li><a href="https://drive.google.com/file/d/13KXeVsV2tfRe3E9KJMlJIYWt5lwZk3lF/view?usp=drivesdk">K Venkata Reddy</a></li>
+                    </ul>
+                </div>
+                <div class="material_items_2">
+                    <p>Question Bank</p>
+                    <ul>
+                        <li><a href="https://drive.google.com/drive/folders/1D-J08RVdFJUCfbSWRSlOwaygaLIlhZeE">Question Bank</a></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+
+    </div>
+
+    <script>
+        const menuButton = document.getElementById('menuButton');
+        const menuContent = document.getElementById('menuContent');
+    
+        menuButton.addEventListener('click', () => {
+            menuContent.style.display = menuContent.style.display === 'block' ? 'none' : 'block';
+        });
+    
+        window.addEventListener('click', (event) => {
+            if (!menuButton.contains(event.target) && !menuContent.contains(event.target)) {
+                menuContent.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

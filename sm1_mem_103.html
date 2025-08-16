@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEM-103</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="Favicon.png" type="image/x-icon">
+</head>
+<body>
+   
+    <div class="container">
+        <header>
+            <div class="navcontainer">
+                <nav>
+                    <ul id="navList">
+                        <li>
+                            <p id="navpara">FAB Five</p>
+                        </li>
+                        <li>
+                            <div id="navitems">
+                                <a href='home.html'>Home</a>
+                                <a href="contact us.html">Contact Us</a>
+                                <a href='about.html'>About Us</a>
+                               
+                            </div>
+                            <div class="menu">
+                                <button id="menuButton">
+                                    <img src="Hamburger_icon.png" alt="" id="hamburger">
+                                </button>
+                                <div class="menu-content" id="menuContent">
+                                    <a href='home.html'>Home</a>
+                                    <a href="contact us.html">Contact Us</a>
+                                    <a href='about.html'>About Us</a>
+                                </div>
+                            </div>
+                            
+                        </li>
+                    
+                    </ul>
+                    
+                    
+                </nav>
+            </div>
+        </header>
+
+        <main>
+
+            <div class="heading">
+                <div class="heading_div">
+                    <p id="heading_para">MEM-103</p>
+                </div>
+            </div>
+            <div class="material_contentBox">
+                <div class="material_items_1">
+                    <a href="https://drive.google.com/drive/folders/1D9xgHZBi3azszHvm4OUogAJyP8oYGaXY">CT1</a>
+                </div>
+                <div class="material_items_1">
+                    <a href="https://drive.google.com/drive/folders/1DBQ5p1qCQSVn0Cq33sJ-7pnJIL-NG3Wq">CT2</a>
+                </div>
+                <div class="material_items_1">
+                    <a href="https://drive.google.com/drive/folders/1DOZaQM10QV8Jwh_Wjq1iXJKbXtOuRXa9">End Semester</a>
+                </div>
+                <div class="material_items_2">
+                    <p>Notes</p>
+                    <ul>
+                        <li><a href="https://drive.google.com/drive/folders/15siQasOK5AFsSbQyMDPJONEcOBoLZOZm">Unit 1</a></li>
+                        <li><a href="https://drive.google.com/drive/folders/15vqq6u-Sr3Mdm2wsF40fA4bU5pH3R29V">Unit 2</a></li>
+                        <li><a href="https://drive.google.com/drive/folders/15y0thgAu32LtREh4EjpmthtM61-I18qm">Unit 3</a></li>
+                        <li><a href="https://drive.google.com/drive/folders/162PqdAg3aZmvLrES3Xb_EkvEUNGM8F3E">Unit 4</a></li>
+                        <li><a href="https://drive.google.com/drive/folders/1645hoWLpt_4TqKgsbiy0ayM3XX8fKxI5">Unit 5</a></li>
+                        <li><a href="https://drive.google.com/drive/folders/1Dcfhce_mLlYsZuy-UVgRiKsGOclUIIsA">Complete Notes</a></li>
+
+                    </ul>
+                </div>
+                <div class="material_items_2">
+                    <p>Book</p>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/15okOeombgqNsSzchoflFsnYfd1QZtDWg/view?usp=drivesdk">H.N. Gupta</a></li>
+                        <li><a href="https://drive.google.com/file/d/15msPIkop9cLnrf0O2iFpFVFz6wXPkzuq/view?usp=drivesdk">Serope Kalpakjian</a></li>
+                    </ul>
+                </div>
+                <div class="material_items_2">
+                    <p>Question Bank</p>
+                    <ul>
+                        <li><a href="https://drive.google.com/drive/folders/1DXDKmL1uzbsmdaRI9GsxKw_Ir2Ms4mFL">Question Bank</a></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+
+    </div>
+
+    <script>
+        const menuButton = document.getElementById('menuButton');
+        const menuContent = document.getElementById('menuContent');
+    
+        menuButton.addEventListener('click', () => {
+            menuContent.style.display = menuContent.style.display === 'block' ? 'none' : 'block';
+        });
+    
+        window.addEventListener('click', (event) => {
+            if (!menuButton.contains(event.target) && !menuContent.contains(event.target)) {
+                menuContent.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

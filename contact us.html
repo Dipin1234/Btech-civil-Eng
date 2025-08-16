@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="Favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div class="navcontainer">
+                <nav>
+                    <ul id="navList">
+                        <li>
+                            <p id="navpara">FAB Five</p>
+                        </li>
+                        <li>
+                            <div id="navitems">
+                                <a href='home.html'>Home</a>
+                                <a href="contact us.html">Contact Us</a>
+                                <a href='about.html'>About Us</a>
+
+                            </div>
+                            <div class="menu">
+                                <button id="menuButton">
+                                    <img src="Hamburger_icon.png" alt="" id="hamburger">
+                                </button>
+                                <div class="menu-content" id="menuContent">
+                                    <a href='home.html'>Home</a>
+                                    <a href="contact us.html">Contact Us</a>
+                                    <a href='about.html'>About Us</a>
+                                </div>
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+
+                </nav>
+            </div>
+        </header>
+
+        <main>
+
+            <div class="heading">
+                <div class="heading_div">
+                    <p id="heading_para">Contact Us</p>
+                </div>
+            </div>
+            <div class="contact_us">
+                <div class="contact_div">
+                    <div class="contact_para">
+                        <p class="contact_paragraph">
+                            We’re here to help! Whether you have questions, need assistance, or just want to share your
+                            thoughts, don’t hesitate to reach out.
+                        </p>
+                        <br>
+                        <h1 class="contact_h1">
+                            Contact Information
+                        </h1>
+                        <ul>
+                            <li class="contact_list_1">
+                                <a href="mailto:fabfiveofficial2024@gmail.com">G-mail</a>
+                            </li>
+                            
+                            <li class="contact_list_1">
+                                <a href="tel:+91 8057596098">Contact Number</a>
+                            </li>
+                        </ul>
+                        <br>
+                        <h1 class="contact_h1">
+                            Follow Us on Social Media
+                        </h1>
+                        <p class="contact_paragraph" id="p">
+                            Stay connected with us for updates and tips! 
+                        </p>
+                        <br>
+                        <ul>
+                           
+                            <li class="contact_list_1">
+                                <a
+                                    href="https://www.linkedin.com/in/mayank-kumar-31a0861b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+                            </li>
+                            <li class="contact_list_1">
+                                <a
+                                    href="https://www.instagram.com/mayankumar_3/profilecard/?igsh=aW91cWg2N2J2YXN3">Instagram</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        
+
+
+    </div>
+
+
+    <script>
+        const menuButton = document.getElementById('menuButton');
+        const menuContent = document.getElementById('menuContent');
+
+        menuButton.addEventListener('click', () => {
+            menuContent.style.display = menuContent.style.display === 'block' ? 'none' : 'block';
+        });
+
+        window.addEventListener('click', (event) => {
+            if (!menuButton.contains(event.target) && !menuContent.contains(event.target)) {
+                menuContent.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>

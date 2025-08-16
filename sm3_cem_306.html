@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEM-306</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="Favicon.png" type="image/x-icon">
+</head>
+<body>
+   
+    <div class="container">
+        <header>
+            <div class="navcontainer">
+                <nav>
+                    <ul id="navList">
+                        <li>
+                            <p id="navpara">FAB Five</p>
+                        </li>
+                        <li>
+                            <div id="navitems">
+                                <a href='home.html'>Home</a>
+                                <a href="contact us.html">Contact Us</a>
+                                <a href='about.html'>About Us</a>
+                               
+                            </div>
+                            <div class="menu">
+                                <button id="menuButton">
+                                    <img src="Hamburger_icon.png" alt="" id="hamburger">
+                                </button>
+                                <div class="menu-content" id="menuContent">
+                                    <a href='home.html'>Home</a>
+                                    <a href="contact us.html">Contact Us</a>
+                                    <a href='about.html'>About Us</a>
+                                </div>
+                            </div>
+                            
+                        </li>
+                    
+                    </ul>
+                    
+                    
+                </nav>
+            </div>
+        </header>
+
+        <main>
+
+            <div class="heading">
+                <div class="heading_div">
+                    <p id="heading_para">CEM-306</p>
+                </div>
+            </div>
+            <div class="material_contentBox">
+                <div class="material_items_1">
+                    <a href="https://drive.google.com/drive/folders/1N9zG1D29Neq4JwQ3UYaAVItOutF2EYgR">CT1</a>
+                </div>
+                <div class="material_items_1">
+                    <a href="https://drive.google.com/drive/folders/1NBPOtn5jZvXwn9a8F9tG6r6ccjviU4pn">CT2</a>
+                </div>
+                <div class="material_items_1">
+                    <a href="https://drive.google.com/drive/folders/1NTQHgFV6mkicFDi-GVhNvHDWqDig4PL3">End Semester</a>
+                </div>
+                <div class="material_items_2">
+                    <p>Notes</p>
+                    <ul>
+                        <li>
+                            <a href="https://drive.google.com/drive/folders/1N2sJmlZx8fZSCEdj0BAZJn9di1-D_zoz">Notes</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="material_items_2">
+                    <p>Book</p>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/1azEWlo2OmCT6VwVp9SSYDAr1ljUVKNj_/view?usp=drivesdk">IES Master</a></li>
+                        <li><a href="https://drive.google.com/file/d/1al0wqWoFdAyVeQkhgvoHeo8u1yuQkVDX/view?usp=drivesdk">S.K. Garg</a></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+
+    </div>
+
+    <script>
+        const menuButton = document.getElementById('menuButton');
+        const menuContent = document.getElementById('menuContent');
+    
+        menuButton.addEventListener('click', () => {
+            menuContent.style.display = menuContent.style.display === 'block' ? 'none' : 'block';
+        });
+    
+        window.addEventListener('click', (event) => {
+            if (!menuButton.contains(event.target) && !menuContent.contains(event.target)) {
+                menuContent.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

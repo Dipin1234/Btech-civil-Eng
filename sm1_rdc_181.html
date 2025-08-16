@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RDC-181</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="Favicon.png" type="image/x-icon">
+</head>
+<body>
+   
+    <div class="container">
+        <header>
+            <div class="navcontainer">
+                <nav>
+                    <ul id="navList">
+                        <li>
+                            <p id="navpara">FAB Five</p>
+                        </li>
+                        <li>
+                            <div id="navitems">
+                                <a href='home.html'>Home</a>
+                                <a href="contact us.html">Contact Us</a>
+                                <a href='about.html'>About Us</a>
+                               
+                            </div>
+                            <div class="menu">
+                                <button id="menuButton">
+                                    <img src="Hamburger_icon.png" alt="" id="hamburger">
+                                </button>
+                                <div class="menu-content" id="menuContent">
+                                    <a href='home.html'>Home</a>
+                                    <a href="contact us.html">Contact Us</a>
+                                    <a href='about.html'>About Us</a>
+                                </div>
+                            </div>
+                            
+                        </li>
+                    
+                    </ul>
+                    
+                    
+                </nav>
+            </div>
+        </header>
+
+        <main>
+
+            <div class="heading">
+                <div class="heading_div">
+                    <p id="heading_para">RDC-181</p>
+                </div>
+            </div>
+            <div class="material_contentBox">
+                <div class="material_items_1">
+                    <a href="https://drive.google.com/drive/folders/14vEKYpsNQVWh5XTxaT71ZL2SpEGPqjDd">CT2</a>
+                </div>
+                <div class="material_items_2">
+                    <p>Notes</p>
+                    <ul id="RDC">
+                        <li><a href="https://drive.google.com/file/d/15tTYPwgc5_qbprtkSrxY-IJgA5L8mfBX/view?usp=drivesdk">Land Surveying</a></li>
+                        <li><a href="https://drive.google.com/file/d/15yiMrTPzlYukCc1DYLNep3YXwwH_bO0e/view?usp=drivesdk">Chain and Compass Surveying</a></li>
+                        <li><a href="https://drive.google.com/file/d/15vbWBPcqjGAu09xeAaWG-0UttoCCEhG8/view?usp=drivesdk">Plane Table Surveying</a></li>
+                        <li><a href="https://drive.google.com/file/d/1626lCsVLlGL5Rg0bXLbp9oZWT1GmsubS/view?usp=drivesdk">Levelling</a></li>
+                        <li><a href="https://drive.google.com/file/d/164uCUu2G6CsaYVLGNvmlyrxP27xqs8xA/view?usp=drivesdk">Agriculture Farming</a></li>
+                        <li><a href="https://drive.google.com/file/d/166nL7XBwnN9_R0zFkXFY5Bu0WeDC5k41/view?usp=drivesdk">Preparation of Land</a></li>
+                        <li><a href="https://drive.google.com/file/d/16BJgD5tLfsoPRhlrmd78ggabWP4qb4E6/view?usp=drivesdk">Different Operation of Farming</a></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+
+    </div>
+
+    <script>
+        const menuButton = document.getElementById('menuButton');
+        const menuContent = document.getElementById('menuContent');
+    
+        menuButton.addEventListener('click', () => {
+            menuContent.style.display = menuContent.style.display === 'block' ? 'none' : 'block';
+        });
+    
+        window.addEventListener('click', (event) => {
+            if (!menuButton.contains(event.target) && !menuContent.contains(event.target)) {
+                menuContent.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

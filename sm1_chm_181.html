@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHM-181</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="Favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div class="navcontainer">
+                <nav>
+                    <ul id="navList">
+                        <li>
+                            <p id="navpara">FAB Five</p>
+                        </li>
+                        <li>
+                            <div id="navitems">
+                                <a href='home.html'>Home</a>
+                                <a href="contact us.html">Contact Us</a>
+                                <a href='about.html'>About Us</a>
+
+                            </div>
+                            <div class="menu">
+                                <button id="menuButton">
+                                    <img src="Hamburger_icon.png" alt="" id="hamburger">
+                                </button>
+                                <div class="menu-content" id="menuContent">
+                                    <a href='home.html'>Home</a>
+                                    <a href="contact us.html">Contact Us</a>
+                                    <a href='about.html'>About Us</a>
+                                </div>
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+
+                </nav>
+            </div>
+        </header>
+
+        <main>
+
+            <div class="heading">
+                <div class="heading_div">
+                    <p id="heading_para">CHM-181</p>
+                </div>
+            </div>
+            <div class="material_contentBox">
+                <div class="material_items_1">
+                    <a
+                        href="https://drive.google.com/drive/folders/1Btg-4klq9576g_Yl7O4ApinW4W7QX-Fi">CT1</a>
+                </div>
+                <div class="material_items_1">
+                    <a
+                        href="https://drive.google.com/drive/folders/1BvBRins9BpGKmElGuJPCrMlkqve1t2bG">CT2</a>
+                </div>
+                <div class="material_items_1">
+                    <a href="https://drive.google.com/drive/folders/1C4zhQqnmU_JnnfnXSjhFdYBrMNg2fZQ7">End
+                        Semester</a>
+                </div>
+                <div class="material_items_1">
+                    <a href="https://drive.google.com/drive/folders/1C7q_WyJK_jLOASxFfDgUBzNKNxRYt3Yp">Notes</a>
+                </div>
+                
+                <div class="material_items_2">
+                    <p>Book</p>
+                    <ul>
+                        <li><a
+                                href="https://drive.google.com/file/d/12x7xGMaTCIINVYN4zSTDAhCahEeRA7IG/view?usp=drivesdk">Jain
+                                and Jain</a></li>
+                        <li><a
+                                href="https://drive.google.com/file/d/12pNKvu-t013pbm8SEy5ds1bfHozPUK66/view?usp=drivesdk">Shikha
+                                Agarwal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="material_items_2">
+                    <p>Question Bank</p>
+                    <ul>
+                        <li><a href="https://drive.google.com/drive/folders/1C9PWSR7CqDJp17bSjWVpFQ7OuyZxdX2S">Question Bank</a></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+
+    </div>
+
+    <script>
+        const menuButton = document.getElementById('menuButton');
+        const menuContent = document.getElementById('menuContent');
+
+        menuButton.addEventListener('click', () => {
+            menuContent.style.display = menuContent.style.display === 'block' ? 'none' : 'block';
+        });
+
+        window.addEventListener('click', (event) => {
+            if (!menuButton.contains(event.target) && !menuContent.contains(event.target)) {
+                menuContent.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>

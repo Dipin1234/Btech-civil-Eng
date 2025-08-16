@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="Favicon.png" type="image/x-icon">
+    
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div class="navcontainer">
+                <nav>
+                    <ul id="navList">
+                        <li>
+                            <p id="navpara">FAB Five</p>
+                        </li>
+                        <li>
+                            <div id="navitems">
+                                <a href='/'>Home</a>
+                                <a href="contact us.html">Contact Us</a>
+                                <a href='about.html'>About Us</a>
+
+                            </div>
+                            <div class="menu">
+                                <button id="menuButton">
+                                    <img src="Hamburger_icon.png" alt="" id="hamburger">
+                                </button>
+                                <div class="menu-content" id="menuContent">
+                                    <a href='/'>Home</a>
+                                    <a href="contact us.html">Contact Us</a>
+                                    <a href='about.html'>About Us</a>
+                                </div>
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+
+                </nav>
+            </div>
+        </header>
+
+        <main>
+
+            <div class="heading">
+                <div class="heading_div">
+                    <p id="heading_para">About Us</p>
+                </div>
+            </div>
+            <div class="about">
+                <div class="about_para">
+                    <p>
+                        Welcome to FABFive! <br><br>
+
+                        At FABFive, we understand that the journey through college can be both exciting and
+                        challenging. Our mission is to empower students by providing easy access to a wide range of
+                        study materials designed to enhance learning and academic success.
+                    </p>
+                    <h1 class="about_h1">
+                        Our Vision
+                    </h1>
+                    <p>
+                        We envision a collaborative learning environment where everyone has access to the resources they
+                        need to succeed. By fostering a community of sharing and support, we aim to enhance the
+                        educational experience for all.
+                    </p>
+                    <h1 class="about_h1">
+                        What We Offer
+                    </h1>
+                    <ul>
+                        <li>
+                            <p>
+                                Comprehensive Study Materials: From lecture notes and summaries to practice questions
+                                and
+                                multimedia resources, we curate a diverse range of content tailored to various subjects
+                                and
+                                learning styles.
+                            </p>
+                        </li><br>
+                        <li>
+                            <p>
+                                User-Friendly Platform: Our website is designed to be easy to navigate, making it simple
+                                for
+                                you to find the resources you need quickly and efficiently.
+                            </p>
+                        </li><br>
+                        <li>
+                            <p>
+                                Collaborative Community: We encourage contributions from our colleagues, allowing
+                                everyone
+                                to share their knowledge and expertise. Together, we can create a rich repository of
+                                information that benefits us all.
+                            </p>
+                        </li>
+                    </ul>
+                    <h1 class="about_h1">
+                        Join Us
+                    </h1>
+                    <p>
+                        We invite you to explore our resources and become a part of our learning community. Whether
+                        you’re a seasoned expert or just starting out, your insights and contributions are invaluable.
+                        <br><br>
+                        Thank you for visiting FABFive! Together, let’s make learning an enjoyable and
+                        rewarding journey. <br><br><br><br><br><br>
+                    </p>
+                </div>
+            </div>
+
+        </main>
+
+
+    </div>
+
+    <script>
+        const menuButton = document.getElementById('menuButton');
+        const menuContent = document.getElementById('menuContent');
+
+        menuButton.addEventListener('click', () => {
+            menuContent.style.display = menuContent.style.display === 'block' ? 'none' : 'block';
+        });
+
+        window.addEventListener('click', (event) => {
+            if (!menuButton.contains(event.target) && !menuContent.contains(event.target)) {
+                menuContent.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>
